@@ -5,7 +5,7 @@ import '../partials/customappbar.dart';
 import '../partials/customdrawer.dart';
 
 // ignore: must_be_immutable
-class HomePage extends StatelessWidget {
+class SearchPage extends StatelessWidget {
   TextStyle styles = TextStyle(
       fontFamily: 'cursive', fontSize: 24, fontWeight: FontWeight.bold);
 
@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<AppData>(
       builder: (context, appdata, child) => Scaffold(
-        appBar: customAppBar(pageContext: context),
+        appBar: customAppBar(hideSearch: true, pageContext: context, title: 'Busque um artigo'),
         drawer: customDrawer(context: context),
         body: Center(
           child: Column(
