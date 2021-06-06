@@ -14,7 +14,7 @@ class SearchPage extends StatelessWidget {
     return Consumer<AppData>(
       builder: (context, appdata, child) => Scaffold(
         appBar: customAppBar(hideSearch: true, pageContext: context, title: 'Busque um artigo'),
-        drawer: customDrawer(context: context),
+        drawer: customDrawer(pageContext: context),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

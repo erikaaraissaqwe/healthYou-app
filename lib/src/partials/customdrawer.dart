@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget customDrawer({required BuildContext context}) {
+Widget customDrawer({required BuildContext pageContext}) {
   return Drawer(
     child: ListView(
       padding: EdgeInsets.zero,
@@ -43,7 +43,7 @@ Widget customDrawer({required BuildContext context}) {
             ),
           ),
           onTap: () {
-            Navigator.pushReplacementNamed(context, '/home');
+            Navigator.pushReplacementNamed(pageContext, '/home');
           },
         ),
         ListTile(
@@ -57,7 +57,7 @@ Widget customDrawer({required BuildContext context}) {
             ),
           ),
           onTap: () {
-            Navigator.pushReplacementNamed(context, '/healthbot');
+            Navigator.pushReplacementNamed(pageContext, '/articles');
           },
         ),
         ListTile(
@@ -71,7 +71,7 @@ Widget customDrawer({required BuildContext context}) {
             ),
           ),
           onTap: () {
-            Navigator.pushReplacementNamed(context, '/search');
+            Navigator.pushReplacementNamed(pageContext, '/search');
           },
         ),
         ListTile(
@@ -85,7 +85,7 @@ Widget customDrawer({required BuildContext context}) {
             ),
           ),
           onTap: () {
-            Navigator.pushReplacementNamed(context, '/healthbot');
+            Navigator.pushReplacementNamed(pageContext, '/healthbot');
           },
         ),
       ],
