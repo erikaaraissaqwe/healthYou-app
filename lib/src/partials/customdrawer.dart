@@ -61,20 +61,6 @@ Widget customDrawer({required BuildContext pageContext}) {
           },
         ),
         ListTile(
-          leading: Icon(Icons.search, color: Colors.red[900]),
-          title: Text(
-            'Buscar Artigo',
-            style: TextStyle(
-              fontFamily: 'monospace',
-              fontSize: 16,
-              color: Colors.black,
-            ),
-          ),
-          onTap: () {
-            Navigator.pushReplacementNamed(pageContext, '/search');
-          },
-        ),
-        ListTile(
           leading: Icon(Icons.balcony, color: Colors.red[900]),
           title: Text(
             'Health Bot',

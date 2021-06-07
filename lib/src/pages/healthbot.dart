@@ -44,4 +44,3 @@ class HealthBotPage extends StatelessWidget {
     );
   }
 }
-

@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<AppData>(
       builder: (context, appdata, child) => Scaffold(
-        appBar: customAppBar(pageContext: context, hideSearch: true),
+        appBar: customAppBar(pageContext: context),
         drawer: customDrawer(pageContext: context),
         body: Center(
           child: Column(
