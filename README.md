@@ -2,6 +2,8 @@
 
 Projeto em Flutter para a disciplina de PRJS6.
 
+O projeto contempla a utilização do HealthBot e da API de artigos, onde o usuário é direcionado para a aplicação do HealthBot no Messenger e pode visualizar vários artigos.
+
 A new Flutter project.
 
 ## Getting Started
