@@ -15,7 +15,7 @@ class _PreloadPage extends State<PreloadPage> {
     requestInfo();
   }
 
-  bool loading = true;
+  bool loading = false;
 
   void requestInfo() async {
     
@@ -78,7 +78,9 @@ class _PreloadPage extends State<PreloadPage> {
                           fontWeight: FontWeight.bold
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        requestInfo();
+                      },
                     ),
                   )
                 : Container(),

@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.health">
    <application
-        android:label="health"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Health You"
+        android:icon="@mipmap/ic_launcher1">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

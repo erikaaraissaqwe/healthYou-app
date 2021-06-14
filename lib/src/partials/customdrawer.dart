@@ -1,6 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+void _openUrl(String url, String fallbackUrl) async {
+ 
+  try {
+    bool launched =
+        await launch(url, forceSafariVC: false, forceWebView: false);
+    if (!launched) {
+      await launch(fallbackUrl, forceSafariVC: false, forceWebView: false);
+      }
+  } catch (e) {
+    await launch(fallbackUrl, forceSafariVC: false, forceWebView: false);
+  }
+}
 
 Widget customDrawer({required BuildContext pageContext}) {
+  
   return Drawer(
     child: ListView(
       padding: EdgeInsets.zero,
@@ -71,7 +86,7 @@ Widget customDrawer({required BuildContext pageContext}) {
             ),
           ),
           onTap: () {
-            Navigator.pushReplacementNamed(pageContext, '/healthbot');
+            _openUrl('https://m.me/healthBot145', 'https://www.messenger.com/t/104990148372173/?messaging_source=source%3Apages%3Amessage_shortlink');
           },
         ),
       ],
